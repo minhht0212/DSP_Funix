@@ -4,7 +4,7 @@ File1 = None
 while File1 is None:
     try:
         filename = input("Enter a class to grade (i.e. class1 for class1.txt): ")             
-        with open(filename+".txt", "r") as fclile1:
+        with open(filename+".txt", "r") as File1:
             File1 = pd.read_csv(filename+".txt", delimiter="\t", header=None)
         print("Successfully opened "+filename + ".txt\n*** ANALYZING ***")
     except:
